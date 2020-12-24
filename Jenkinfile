@@ -1,0 +1,30 @@
+pipeline {
+
+     agent any
+    
+     stages {
+              stage ('build') {
+                                             
+                   steps {
+                         echo "welcome to build phase"   
+                     }
+             }
+           
+            stage ('test') {
+                                             
+                   steps {
+                         echo "welcome to Test phase"   
+                     }
+             }
+              
+              stage ('deploy') {
+                                             
+                   steps {
+                         echo "welcome to deploy phase"   
+                     }
+             }
+
+}
+
+
+}
